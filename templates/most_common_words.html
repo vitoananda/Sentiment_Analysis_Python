@@ -1,0 +1,25 @@
+<!-- most_common_words.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sentiment Analysis Report - Most Common Words</title>
+</head>
+<body>
+  <h1>Most Common Words</h1>
+
+  <h2>Positive Comments</h2>
+  <ul>
+    {% for word, count in most_common_positive %}
+      <li>{{ word }}: {{ count }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Negative Comments</h2>
+  <ul>
+    {% for word, count in most_common_negative %}
+      <li>{{ word }}: {{ count }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

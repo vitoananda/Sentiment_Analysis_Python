@@ -1,0 +1,20 @@
+<!-- word_clouds.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sentiment Analysis Report - Word Clouds</title>
+</head>
+<body>
+  <h1>Word Clouds</h1>
+
+  <h2>Overall Word Cloud</h2>
+  <img src="{{ url_for('static', filename='wordcloud.png') }}" alt="Overall Word Cloud">
+
+  <h2>Positive Word Cloud</h2>
+  <img src="{{ url_for('static', filename='wordcloud_positive.png') }}" alt="Positive Word Cloud">
+
+  <h2>Negative Word Cloud</h2>
+  <img src="{{ url_for('static', filename='wordcloud_negative.png') }}" alt="Negative Word Cloud">
+</body>
+</html>
